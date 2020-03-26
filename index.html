@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" cpmtemt="width=device-width,initial-scale=1.0,user-scalable=no">
+  <title>OSAMU UEHARA ポートフォリオ</title>
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <!-- ナビバー -->
+    <nav class="fixed">
+      <ul class="nav-list">
+        <li class="page-link"><a href="#about" class="page-link">ABOUT</a></li>
+        <li class="page-link"><a href="#skill" class="page-link">SKILL</a></li>
+        <li class="page-link"><a href="#work" class="page-link">WORK</a></li>
+        <li class="page-link"><a href="#contact" class="page-link">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- ナビバーここまで -->
+
+    <!-- page-head -->
+    <img src="img/top-img.jpg" class="top-img" id="top">
+    <div class="section-one">
+      <h1 class="say-hello">
+        HELLO!<br>
+        IM OSAMU UEHARA
+      </h1>
+    </div>
+    <!-- page-headここまで -->
+
+    <!-- section-two -->
+    <div id="about" class="section-two">
+      <h2 class="section-heading">ABOUT</h2>
+    </div>
+    <!-- section-twoここまで -->
+
+    <!-- section-three -->
+    <div id="skill" class="section-three">
+      <h2 class="section-heading">SKILL</h2>
+    </div>
+    <!-- section-threeここまで -->
+
+    <!-- section-four -->
+    <div id="work" class="section-four">
+      <h2 class="section-heading">WORK</h2>
+    </div>
+    <!-- section-fourここまで -->
+
+    <!-- section-five -->
+    <div id="contact" class="section-five">
+      <h2 class="section-heading">CONTACT</h2>
+    </div>
+    <!-- section-fiveここまで -->
+
+
+    <a href="#top" class="page-link">TO TOP</a>
+
+  </div>
+
+  <script>
+    $(function(){
+      $('a[href^=#]').click(function() {
+      var adjust = 0;
+      var speed = 400;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top + adjust;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+      });
+    });
+  </script>
+</body>
+
+
+
+</html>
