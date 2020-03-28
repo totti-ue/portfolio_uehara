@@ -50,16 +50,21 @@ a.page-link:hover {
   color: gold;
 }
 
-.top-img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: relative;
+
+.text-center {
+  text-align: center;
 }
 
+
+
+
+/* section-one ----------------------*/
+
 .section-one {
-  position: absolute;
-  top: 62px;
+  background-image: url(../img/top-img.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 62px;
   width: 100vw;
   height: calc(100vh - 62px);
   display: flex;
@@ -78,52 +83,41 @@ a.page-link:hover {
 }
 
 .heading-top {
-  position: absolute;
-  top: 70px;
+  margin-top: 70px;
+  text-align: center;
 }
 
 .section-description {
-  position: absolute;
-  top: 144px;
   font-size: 22px;
+  text-align: center;
   color: white;
 }
 
-/* section-two */
+/* section-two ----------------------*/
 .section-two {
   width: 100vw;
   height: 100vh;
   background-color: dimgray;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  /* align-items: center; */
 }
 
 .section-contents-wrapper {
-  position: absolute;
-  top: 242px;
   width: 80%;
-  /* display: flex;
-  justify-content: space-around; */
+  margin: 100px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .self-img {
-  min-width: 300px;
-  max-height: 300px;
-  background-color: orangered;
-  background-position: center;
-  background-size: cover;
+  width: 32%;
+  min-width: 250px;
+  object-fit: cover;
   display: block;
   border-radius: 50%;
-  text-align: center;
-  line-height: 300px;
-  float: left;
-  margin: 0 100px 100px;
+  margin: 0 30px 30px;
 }
 
 .profile-box {
-  float: left;
   min-width: 380px;
   padding: 20px 60px;
   color: white;
@@ -131,25 +125,25 @@ a.page-link:hover {
 }
 
 
-/* section-three */
+/* section-three ----------------------*/
 .section-three {
   width: 100vw;
   height: 100vh;
   background-color: darkcyan;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 
 .my-skills {
   color: white;
   width: 80%;
+  margin: 100px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .skill-object {
-  width: calc(50% - 20px);
+  min-width: calc(50% - 20px);
   height: 50px;
   font-size: 20px;
   line-height: 20px;
@@ -158,7 +152,6 @@ a.page-link:hover {
   padding-left: 10px;
   margin: 20px 10px 20px 0;
   box-shadow: 0px 0px 12px 0px deepskyblue;
-  float: left;
 }
 
 .skill-object-title {
@@ -173,33 +166,97 @@ a.page-link:hover {
   margin-right: 10px;
   float: right;
 }
-/* #wrapper-three {
-  justify-content: space-between;
-} */
 
 
 
-/* section-four */
+/* section-four ----------------------*/
 .section-four {
   width: 100vw;
   height: 100vh;
   background-color: darkgoldenrod;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 .my-works {
-  width: 292px;
-  height: 400px;
-  background-color: palegoldenrod;
+  width: 360px;
+  height: 360px;
   float: left;
   margin: 10px;
+  color: white;
 }
 
 
-/* section-five */
+.my-works-img {
+  width: 100%;
+  height: 270px;
+  background-size: cover;
+  background-color: gray;
+  box-shadow: 0px 0px 4px 2px gainsboro;
+}
+
+.my-works-img:hover {
+  opacity: 0.6;
+}
+
+.my-works-details {
+  width: 100%;
+  height: calc(100% - 270px);
+  font-size: 14px;
+}
+
+.site-title {
+  font-size: 16px;
+  font-weight: bold;
+  height: 26px;
+  line-height: 30px;
+}
+
+.development-language {
+  height: 26px;
+  line-height: 26px;
+}
+
+.my-works-links {
+  height: 18px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-to-my-work {
+  color: gold;
+  margin: 0 10px;
+}
+
+.link-to-my-work:hover {
+  opacity: 0.6;
+}
+
+.site-caution {
+  font-size: 12px;
+  color: whitesmoke;
+  cursor: pointer;
+  padding-left: 10px;
+  opacity: 0.7;
+  position: relative;
+}
+
+.speech-bubble {
+  position: absolute;
+  top: -60px;
+  left: 105px;
+  height: 60px;
+  background-color: black;
+  border-radius: 10px;
+  line-height: 18px;
+  text-align: left;
+  padding: 5px 20px;
+}
+
+.no-display {
+  display: none;
+}
+
+/* section-five ----------------------*/
 .section-five {
   width: 100vw;
   height: 100vh;
@@ -207,11 +264,9 @@ a.page-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .page-link-to-top {
-  width: 50px;
   height: 50px;
   color: white;
   font-size: 30px;
@@ -219,8 +274,4 @@ a.page-link:hover {
   line-height: 50px;
   opacity: 0.6;
   background-color: darkslategray;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
 }
