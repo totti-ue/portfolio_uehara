@@ -1,7 +1,14 @@
+body{
+  color: #333;
+}
+
 a{
   text-decoration: none;
-  color: white;
+  color: #333;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s ease;
 }
+
 #wrapper {
   display: flex;
   flex-direction: column;
@@ -27,15 +34,12 @@ li.page-link {
   text-align: center;
   line-height: 60px;
   font-weight: bold;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s ease;
   cursor: pointer;
-  color: white;
 }
 
 li.page-link:hover {
-  border-bottom: 2px solid gold;
-  color: gold;
+  border-bottom: 2px solid dodgerblue;
+  color: dodgerblue;
 }
 
 a.page-link {
@@ -47,7 +51,7 @@ a.page-link {
 }
 
 a.page-link:hover {
-  color: gold;
+  color: dodgerblue;
 }
 
 
@@ -78,31 +82,30 @@ a.page-link:hover {
 }
 
 .section-heading {
-  color: white;
   font-size: 60px;
 }
 
 .heading-top {
   margin-top: 70px;
   text-align: center;
+  font-weight: bold;
 }
 
 .section-description {
   font-size: 22px;
   text-align: center;
-  color: white;
+  color: gray;
 }
 
 /* section-two ----------------------*/
 .section-two {
   width: 100vw;
-  height: 100vh;
-  background-color: dimgray;
+  height: auto;
 }
 
 .section-contents-wrapper {
   width: 80%;
-  margin: 100px auto 0;
+  margin: 80px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -110,17 +113,18 @@ a.page-link:hover {
 
 .self-img {
   width: 32%;
-  min-width: 250px;
+  min-width: 300px;
+  height: 100%;
   object-fit: cover;
   display: block;
   border-radius: 50%;
-  margin: 0 30px 30px;
+  margin: 30px 30px;
 }
 
 .profile-box {
   min-width: 380px;
+  max-width: 40%;
   padding: 20px 60px;
-  color: white;
   font-size: 20px;
 }
 
@@ -128,15 +132,14 @@ a.page-link:hover {
 /* section-three ----------------------*/
 .section-three {
   width: 100vw;
-  height: 100vh;
-  background-color: darkcyan;
+  height: auto;
+  background-color: rgba(0,0,0,0.1);
 }
 
 
 .my-skills {
-  color: white;
   width: 80%;
-  margin: 100px auto 0;
+  margin: 100px auto 140px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -148,10 +151,9 @@ a.page-link:hover {
   font-size: 20px;
   line-height: 20px;
   background-color: white;
-  color: darkcyan;
   padding-left: 10px;
   margin: 20px 10px 20px 0;
-  box-shadow: 0px 0px 12px 0px deepskyblue;
+  box-shadow: 0px 0px 12px 0px #333;
 }
 
 .skill-object-title {
@@ -172,8 +174,7 @@ a.page-link:hover {
 /* section-four ----------------------*/
 .section-four {
   width: 100vw;
-  height: 100vh;
-  background-color: darkgoldenrod;
+  height: auto;
 }
 
 .my-works {
@@ -181,7 +182,6 @@ a.page-link:hover {
   height: 360px;
   float: left;
   margin: 10px;
-  color: white;
 }
 
 
@@ -223,7 +223,7 @@ a.page-link:hover {
 }
 
 .link-to-my-work {
-  color: gold;
+  color: dodgerblue;
   margin: 0 10px;
 }
 
@@ -233,10 +233,9 @@ a.page-link:hover {
 
 .site-caution {
   font-size: 12px;
-  color: whitesmoke;
+  color: darkgray;
   cursor: pointer;
   padding-left: 10px;
-  opacity: 0.7;
   position: relative;
 }
 
@@ -250,6 +249,7 @@ a.page-link:hover {
   line-height: 18px;
   text-align: left;
   padding: 5px 20px;
+  color: white;
 }
 
 .no-display {
@@ -259,11 +259,8 @@ a.page-link:hover {
 /* section-five ----------------------*/
 .section-five {
   width: 100vw;
-  height: 100vh;
-  background-color: darkslateblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .page-link-to-top {
@@ -274,4 +271,43 @@ a.page-link:hover {
   line-height: 50px;
   opacity: 0.6;
   background-color: darkslategray;
+}
+
+#contact-way {
+  justify-content: center;
+  margin: 60px auto 120px;
+}
+
+.contact-icon {
+  font-size: 60px;
+  margin: 20px;
+  padding: 0px 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.fa-envelope {
+  color: red;
+}
+
+#twitter-icon {
+  background-color: deepskyblue;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-github {
+  font-size: 90px;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.mail-address {
+  width: 80%;
+  text-align: center;
+  font-size: 22px;
+  color: gray;
 }
