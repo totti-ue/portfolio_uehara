@@ -79,6 +79,7 @@ a.page-link:hover {
   color: white;
   font-size: 70px;
   font-weight: bold;
+  height: 200px;
 }
 
 .section-heading {
@@ -284,6 +285,7 @@ a.page-link:hover {
   padding: 0px 15px;
   background-color: white;
   border-radius: 50%;
+  line-height: 90px;
 }
 
 .fa-envelope {
@@ -311,3 +313,5 @@ a.page-link:hover {
   font-size: 22px;
   color: gray;
 }
+
+
