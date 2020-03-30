@@ -390,13 +390,13 @@ a.page-link:hover {
     padding: 0 20px 30px;
     max-width: 100%;
     min-width: 100%;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .profile-theme {
     width: 60px;
   }
-  
+
   .profile-content {
     width: calc(100% - 60px);
   }
