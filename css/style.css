@@ -123,10 +123,25 @@ a.page-link:hover {
 }
 
 .profile-box {
-  min-width: 380px;
+  min-width: 430px;
   max-width: 40%;
-  padding: 20px 60px;
-  font-size: 20px;
+  padding: 20px 35px;
+  font-size: 18px;
+}
+
+.profile-box__details {
+  width: 100%;
+}
+
+.profile-theme {
+  float: left;
+  width: 66px;
+  letter-spacing: 4px;
+}
+
+.profile-content {
+  display: inline-block;
+  width: calc(100% - 66px);
 }
 
 
