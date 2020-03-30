@@ -135,13 +135,13 @@ a.page-link:hover {
 
 .profile-theme {
   float: left;
-  width: 66px;
+  width: 62px;
   letter-spacing: 4px;
 }
 
 .profile-content {
   display: inline-block;
-  width: calc(100% - 66px);
+  width: calc(100% - 68px);
 }
 
 
