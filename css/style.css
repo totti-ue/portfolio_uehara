@@ -396,7 +396,7 @@ a.page-link:hover {
   .profile-theme {
     float: left;
     width: 60px;
-    display: inline-block;
+    display: block;
   }
 
   .profile-content {
