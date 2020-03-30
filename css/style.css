@@ -388,8 +388,8 @@ a.page-link:hover {
   
   .profile-box {
     padding: 0 20px 30px;
-    max-width: calc(100vw - 40px);
-    min-width: calc(100vw - 40px);
+    max-width: 100%;
+    min-width: 100%;
     font-size: 15px;
   }
 
