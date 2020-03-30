@@ -394,11 +394,14 @@ a.page-link:hover {
   }
 
   .profile-theme {
+    float: left;
     width: 60px;
+    display: inline-block;
   }
 
   .profile-content {
     width: calc(100% - 60px);
+    display: inline-block;
   }
 
   /* secition-three */
