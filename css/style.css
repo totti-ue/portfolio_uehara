@@ -159,7 +159,7 @@ a.page-link:hover {
 
 .skill-object-title {
   height: 100%;
-  font-size: 20px;
+  /* font-size: 20px; */
   line-height: 50px;
   margin-right: 10px;
 }
@@ -314,4 +314,129 @@ a.page-link:hover {
   color: gray;
 }
 
+
+@media screen and (max-width: 480px) {
+  body {
+    color: black;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s ease;
+  }
+
+  nav.fixed {
+    /* width: 100vw; */
+    height: 60px;
+    position: fixed;
+    top: 0;
+    border-bottom:2px solid lightgray;
+    z-index: 100;
+    background-color: white;
+  }
+
+  .say-hello {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    height: 200px;
+    margin-left: 10px;
+  }
+
+  /* secition-two */
+
+  .section-two {
+    padding-bottom: 30px;
+  }
+
+  .section-heading {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  
+  .heading-top {
+    margin-top: 62px;
+  }
+
+  .section-contents-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .self-img {
+    min-width: 260px;
+  }
+  
+  .profile-box {
+    padding: 0 30px 30px;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 16px;
+  }
+
+  /* secition-three */
+  .section-three {
+    padding-bottom: 30px;
+  }
+
+  .my-skills {
+    margin: 20px auto;
+    width: 90%;
+    justify-content: space-around;
+  }
+
+  .skill-object {
+    min-width: calc(100% - 14px);
+    font-size: 18px;
+    margin: 20px 10px;
+  }
+
+  /* secition-three */
+  #wrapper-four {
+    padding: 30px 0;
+  }
+
+  .my-works-img {
+    height: 230px;
+  }
+
+  .development-language {
+    height: 55px;
+  }
+
+  .site-caution {
+    padding: 0;
+  }
+
+  .speech-bubble {
+    top: -82px;
+    left: -25px;
+    background-color: #333;
+    opacity: 0.9;
+  }
+
+  #section-five {
+    font-size: 16px;
+  }
+
+  .contact-icon {
+    font-size: 42px;
+    margin: 14px;
+    padding: 0px 12px;
+    line-height: 70px;
+  }
+
+  .fa-github {
+    font-size: 70px;
+    margin: 14px;
+  }
+
+  .mail-address {
+    width: 100vw;
+  }
+}
 
