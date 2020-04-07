@@ -127,6 +127,8 @@ a.page-link:hover {
   max-width: 40%;
   padding: 20px 35px;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-box__details {
