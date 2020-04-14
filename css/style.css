@@ -331,6 +331,16 @@ a.page-link:hover {
   color: gray;
 }
 
+.scl {
+  opacity: 0;
+  transition: all .7s ease;
+}
+
+.showup {
+  opacity: 1;
+}
+
+
 
 @media screen and (max-width: 480px) {
   body {
@@ -345,7 +355,6 @@ a.page-link:hover {
   }
 
   nav.fixed {
-    /* width: 100vw; */
     height: 60px;
     position: fixed;
     top: 0;
